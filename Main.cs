@@ -10,10 +10,10 @@ namespace RPM
     {
         static void Main()
         {
-            //Vklad.ZadanieVklad vklad = new Vklad.ZadanieVklad(); vklad.TipoMain();
-            //Rasstoynie.ZadanieRasstoynie rasstoynie = new Rasstoynie.ZadanieRasstoynie(); rasstoynie.TipoMain();
-            NOD.ReshenieNOD NOD = new NOD.ReshenieNOD(); NOD.TipoMain();
-            //Footbol.Help help = new Footbol.Help(); help.TipoMain();
+            //NOD.ReshenieNOD NOD = new NOD.ReshenieNOD(); NOD.TipoMain();   
+            //Uskorenie.Reshenie reshenie = new Uskorenie.Reshenie(); reshenie.TipoMain();
+            //MatricaDiagonali.Resheniy resheniy = new MatricaDiagonali.Resheniy(); resheniy.Qwerty();
+            Individual.Zadanie zadanie = new Individual.Zadanie(); zadanie.TipoMain();
             Console.Write("Для завершения программы нажмите Enter");
             Console.ReadLine();
         }

@@ -45,10 +45,10 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="РПМ вклад.cs" />
+    <Compile Include="Матрица, диагонали.cs" />
+    <Compile Include="РПМ Индивидуальное задание.cs" />
     <Compile Include="РПМ НОД.cs" />
-    <Compile Include="РПМ расстояние.cs" />
-    <Compile Include="РПМ Футбольные команды.cs" />
+    <Compile Include="РПМ Ускорение.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
