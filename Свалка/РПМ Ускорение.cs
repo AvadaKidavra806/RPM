@@ -46,13 +46,13 @@ namespace Uskorenie
                     break;
             }
             double RavnodeystSila = physics.VuchislenieRavnondeystvSilu(Silu);
-            Console.WriteLine("Ускорение равно: " + physics.VuchislenieUskoreniy(RavnodeystSila, m));
+            Console.WriteLine("Ускорение равно: " + physics.VuchislenieUskoreniy(RavnodeystSila, m)+" м/с^2");
         }
 
     }
     public class PhysicsVelichinu
     {
-        double g = 9.8;
+        const double g = 9.8;
         public double ZaprosMassu()
         {
             Console.Write("Введите массу тела (кг) ");
@@ -77,7 +77,7 @@ namespace Uskorenie
                 if (!double.TryParse(Console.ReadLine(), out u))
                     Console.Write("Ошибка! Введите коэффициент трения еще раз ");
                 else if (u <= 0)
-                    Console.Write("Коэффициент трения не может быть неположительной. Введите коэффициент трения еще раз ");
+                    Console.Write("Коэффициент трения не может быть неположительным. Введите коэффициент трения еще раз ");
                 else
                     outu = false;
             }

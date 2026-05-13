@@ -12,12 +12,13 @@ namespace Individual
 			const int Razryad = 16;
 			double[,] Matrica = new double[Razryad, Razryad];
 			Random random = new Random();
+			Console.WriteLine("Задание: Найти наибольшие элементы каждой строки матрицы Z(16;16) и поместить их на главную диагональ. Вывести полученную матрицу.");
 			Console.WriteLine("Первоначальная матрица");
 			for (int i = 0; i < Razryad; i++)
 			{
 				for (int j = 0; j < Razryad; j++)
 				{
-					Matrica[i, j] = Math.Round(random.NextDouble() * 201 - 100, 2);
+					Matrica[i, j] = Math.Round(random.NextDouble() * 101 , 2);
 					Console.Write(Matrica[i, j] + "\t");
 				}
 				Console.WriteLine();
@@ -26,7 +27,7 @@ namespace Individual
 			{
 				NachoshdenieIZamenaMax(i);
 			}
-			Console.WriteLine("Полученная матрица");
+			Console.WriteLine("Полученная матрица (большие элементы каждой строки помещены на главную диагональ)");
 			for (int i = 0; i < Razryad; i++)
 			{
 				for (int j = 0; j < Razryad; j++)
