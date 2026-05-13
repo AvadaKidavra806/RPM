@@ -26,12 +26,24 @@ namespace Imy
 					if (people.Age != 0)
 						break;
 				}
-				catch (System.FormatException)
+				catch (System.FormatException) //оставлено т.к. задание на отработку exception 
+                {
+					VuvodOshibki();
+                }
+				catch (System.OverflowException) //оставлено т.к. задание на отработку exception 
 				{
+					VuvodOshibki();
+                }
+                catch //можно оставить только это
+                {
+                    VuvodOshibki();
+                }
+            }
+			void VuvodOshibki()
+			{ 
 					Console.WriteLine($"{people.Name}, не корректный ввод! Попробуй снова! ");
-				}
-			}
-			if (people.Age < 18)
+            }
+            if (people.Age < 18)
 				Console.WriteLine($"{people.Name}, вы несовершеннолетний!");
 			bool IsBukvu(string name)
 			{
